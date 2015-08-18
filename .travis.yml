@@ -4,6 +4,7 @@ rvm:
 env: COVERAGE=true DB=mysql
 before_install: mysql -e 'create database test;' -u travis
 install: 'bundle install'
+before_script: mv config/travis-db.yml config/database.yml; rake db:migrate
 sudo: false
 notifications:
   email: false
