@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - "2.2.2"
 env: COVERAGE=true DB=mysql
+before_install: mysql -e 'create database test;' -u travis
 install: 'bundle install'
 sudo: false
 script:
