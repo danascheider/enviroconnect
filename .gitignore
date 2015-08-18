@@ -36,3 +36,4 @@ bower.json
 
 # RVM settings
 .ruby_gemset
+.rvm_gemset
