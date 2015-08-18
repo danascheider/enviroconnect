@@ -37,7 +37,7 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner', '~>1.4'
   gem 'capybara', '~>2.4', '>= 2.4.4'
-  gem 'factory_girl', '~> 4.5'
+  gem 'factory_girl_rails', '~>4.5'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
