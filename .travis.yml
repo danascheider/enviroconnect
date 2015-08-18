@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- "2.2.2"
+env: COVERAGE=true
+install: 'bundle install'
+sudo: false
+script:
+  - bundle exec rake travis:run
+notifications:
+  email: false
