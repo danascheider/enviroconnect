@@ -33,10 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'rspec-rails', '~>3.3.3'
+  gem 'rspec-rails', '~>3.3', '>= 3.3.3'
   gem 'cucumber-rails', :require => false
-  gem 'database_cleaner'
-  gem 'capybara'
+  gem 'database_cleaner', '~>1.4'
+  gem 'capybara', '~>2.4', '>= 2.4.4'
+  gem 'factory_girl', '~> 4.5'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
