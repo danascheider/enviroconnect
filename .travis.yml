@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - "2.2.2"
-env: COVERAGE=true
+env: COVERAGE=true DB=mysql
 install: 'bundle install'
 sudo: false
 script:
