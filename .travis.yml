@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - "2.2.2"
 env: COVERAGE=true DB=mysql
-before_install: mysql -e 'create database test;' -u travis
+before_install: mysql -e 'create database enviroconnect_test;' -u travis
 install: 'bundle install'
 before_script: mv config/travis-db.yml config/database.yml; rake db:migrate
 sudo: false
