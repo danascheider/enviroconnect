@@ -1,16 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe OrganizationsController, type: :controller do
-
-  # This should return the minimal set of attributes required to create a valid
-  # Organization. As you add validations to Organization, be sure to
-  # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { name: 'Organization 1' }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { zip: 27712 }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -59,7 +55,7 @@ RSpec.describe OrganizationsController, type: :controller do
 
       it "assigns a newly created organization as @organization" do
         post :create, {:organization => valid_attributes}, valid_session
-        expect(assigns(:organization)).to be_a(Organization)
+        expect(assigns(:organization)).to be_an(Organization)
         expect(assigns(:organization)).to be_persisted
       end
 
