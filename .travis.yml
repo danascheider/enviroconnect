@@ -6,6 +6,7 @@ install: 'bundle install'
 before_script: 
   - mysql -e 'create database enviroconnect_test'
 script:
+  - mv config/travis-db.yml config/database.yml
   - bundle exec rake --trace db:migrate test
 sudo: false
 notifications:
