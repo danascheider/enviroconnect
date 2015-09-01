@@ -1,6 +1,6 @@
 default: &default
   adapter: mysql2
-  user: travis
+  username: travis
   host: 127.0.0.1
   pool: 5
   timeout: 5000
