@@ -1,6 +1,12 @@
 FactoryGirl.define do
   factory :organization do
-    name "Organization"
-  end
+    sequence(:name) do |n|
+      "Organization #{n}"
+    end
 
+    factory :nonprofit_organization do
+      type 'NonprofitOrganization'
+      sequence(:name) {|n| "Nonprofit Organization #{n}" }
+    end
+  end
 end
