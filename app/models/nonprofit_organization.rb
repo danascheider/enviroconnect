@@ -1,0 +1,2 @@
+class NonprofitOrganization < Organization
+end

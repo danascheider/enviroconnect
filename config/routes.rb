@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nonprofit_organizations
   get 'welcome/index'
 
   root 'site#index'
