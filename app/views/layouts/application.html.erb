@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="inviroconnect enviroconnect nonprofit environmental coordinate engagement volunteer partnerships oregon portland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.png">
 
-    <title>EnviroConnect</title>
+    <title>InviroConnect: Coordinating Environmental Action</title>
 
     <!-- Bootstrap core CSS -->
     <%= stylesheet_link_tag 'bootstrap_and_overrides', media: 'all', 'data-turbolinks-track' => true %>
 
     <!-- Custom styles for this template -->
-    <%= stylesheet_link_tag 'style' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'jquery_bxslider', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'lightbox', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'responsive', media: 'all', 'data-turbolinks-track' => true %>
@@ -23,13 +25,7 @@
     <%= javascript_include_tag 'jquery-1.11.3.min','data-turbolinks-track' => true %>
     <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'html5shiv', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'jquery.bxslider.min', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'jquery.nav', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'jquery.scrollTo', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'lightbox-2.6', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'respond', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'tabs', 'data-turbolinks-track' => true %>
+
     <%= csrf_meta_tags %>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,7 +36,91 @@
 </head>
 <body data-spy='scroll' data-target='#topnav'>
 
-<%= yield %>
+  <%= yield %>
 
+  <%= javascript_include_tag 'html5shiv', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.bxslider.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.nav', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.scrollTo', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'lightbox-2.6', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'respond', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'tabs', 'data-turbolinks-track' => true %>
+
+  <script>
+    "use strict";
+    // ACTIVATE BXSLIDER (for slider section)
+    $(document).ready(function(){
+      $('.slides').fadeIn().bxSlider({
+        auto: true,
+        pager: false,
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '<%= image_tag "nextButton.png", alt: "slider next" %>',
+        prevText: '<%= image_tag "prevButton.png", alt: "slider next" %>',
+        // triggers slider animations on slide change
+        onSlideBefore: function(){
+          $('.jumbotron img').addClass("fadeInReallyFast"); 
+          $('.jumbotron h1').addClass("fadeInFast");  
+          $('.jumbotron p').addClass("fadeInMed"); 
+          $('.jumbotron .button').addClass("fadeInSlow"); 
+          $('.jumbotron .buttonSmall').addClass("fadeInSlow"); 
+          $('#emailInputSlider').addClass("fadeInSlow"); 
+
+          setTimeout (function(){
+          $('.jumbotron img').removeClass("fadeInReallyFast"); 
+          $('.jumbotron h1').removeClass("fadeInFast");  
+          $('.jumbotron p').removeClass("fadeInMed"); 
+          $('.jumbotron .button').removeClass("fadeInSlow"); 
+          $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
+          $('#emailInputSlider').removeClass("fadeInSlow"); 
+          }, 1400);
+        }
+      });
+
+      //Triggers slider animations on page load
+      $(document).ready(function() {
+          $('.jumbotron img').toggleClass("fadeInReallyFast"); 
+          $('.jumbotron h1').toggleClass("fadeInFast"); 
+          $('.jumbotron p').toggleClass("fadeInMed"); 
+          $('.jumbotron .button').toggleClass("fadeInSlow"); 
+          $('.jumbotron .buttonSmall').toggleClass("fadeInSlow"); 
+          $('#emailInputSlider').toggleClass("fadeInSlow"); 
+
+          setTimeout (function(){
+          $('.jumbotron img').removeClass("fadeInReallyFast"); 
+          $('.jumbotron h1').removeClass("fadeInFast");  
+          $('.jumbotron p').removeClass("fadeInMed"); 
+          $('.jumbotron .button').removeClass("fadeInSlow"); 
+          $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
+          $('#emailInputSlider').removeClass("fadeInSlow"); 
+          }, 1400);
+      });
+
+      //activate second bxslider (for testimonials section)
+      $('.slides2').bxSlider({
+        auto: true,
+        controls: false
+      });
+      });
+
+    // ACTIVATE ONE PAGE NAV 
+    $(document).ready(function() {
+        $('.nav.navbar-nav.navbar-right').onePageNav();
+    });
+    </script>
+
+    <script>
+    "use strict";
+    // SCREENSHOT IMAGE HOVERS
+    $('.image').mouseover(function()
+    {
+        $(".overlay", this).stop(true, true).fadeIn();
+    }); 
+
+    $('.image').mouseout(function()
+    {
+        $(".overlay", this).stop(true, true).fadeOut();
+    }); 
+  </script>
 </body>
 </html>
