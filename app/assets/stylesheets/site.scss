@@ -1,3 +1,29 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wrapper header.navbar {
+  background: image-url('sliderBg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  padding-top: 1em;
+}
+
+#top-nav > ul {
+  position: relative;
+  float: right;
+  padding-right: 1em;
+  margin-top: 0;
+}
+
+#top-nav > ul > li {
+  padding: 0 1em;
+  display: inline-block;
+}
+
+#wrapper .btn-primary,
+#wrapper .btn-primary:hover,
+#wrapper .btn-primary:focus {
+  color: #fff;
+}
