@@ -104,7 +104,7 @@ a:focus {outline:none;}
 
 .button {
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
-	background-image: url('../images/buttonGreen.png');
+	background-image: image-url('buttonGreen.png');
 	background-repeat:no-repeat;
 	color:white;
 	font-size:18px;
@@ -117,7 +117,7 @@ a:focus {outline:none;}
 .button:hover {
 	color:white;
 	text-decoration:none;
-	background-image: url('../images/buttonGreenHover.png');
+	background-image: image-url('buttonGreenHover.png');
 }
 
 .buttonSmall {
@@ -167,7 +167,7 @@ a:focus {outline:none;}
 .navbar.navbar-default.navbar-fixed-top .navbar-header { margin-left:15px;}
 
 .navbar-brand {
-	background-image: url('../images/logoGreen.png');
+	background-image: image-url('logoGreen.png');
 	background-repeat:no-repeat;
 	margin-top:13px;
 	display:block;
@@ -181,7 +181,7 @@ a:focus {outline:none;}
 	font-weight:600;
 	background:none;
 	padding-bottom:35px;
-	background: url('../images/triangleAqua.png');
+	background: image-url('triangleAqua.png');
 	background-repeat:no-repeat;
 	background-position:center bottom;
 }
@@ -194,7 +194,7 @@ a:focus {outline:none;}
 /******************************** SLIDER ********************************/
 
 .jumbotron {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -373,7 +373,7 @@ a:focus {outline:none;}
 #subSliderMessage {
 	text-align:center;
 	padding:10px 0px 70px 0px;
-	background: url('../images/texture.png');
+	background: image-url('texture.png');
 	-webkit-box-shadow: 0px 2px 5px #bababa;
     -moz-box-shadow: 0px 2px 5px #bababa;
     box-shadow: 0px 2px 5px #bababa;
@@ -397,12 +397,12 @@ a:focus {outline:none;}
 	margin:13px 20px 150px 0px;
 }
 
-#addUserIcon { background-image: url('../images/icons/addUserIconGreen.png'); }
-#cloudIcon { background-image: url('../images/icons/cloudIconGreen.png'); }
-#gearIcon { background-image: url('../images/icons/gearIconGreen.png'); }
-#uploadIcon { background-image: url('../images/icons/uploadIconGreen.png'); }
-#messageIcon { background-image: url('../images/icons/messageIconGreen.png'); }
-#connectIcon { background-image: url('../images/icons/connectIconGreen.png'); }
+#addUserIcon { background-image: image-url('addUserIconGreen.png'); }
+#cloudIcon { background-image: image-url('cloudIconGreen.png'); }
+#gearIcon { background-image: image-url('gearIconGreen.png'); }
+#uploadIcon { background-image: image-url('uploadIconGreen.png'); }
+#messageIcon { background-image: image-url('messageIconGreen.png'); }
+#connectIcon { background-image: image-url('connectIconGreen.png'); }
 
 
 .col-lg-4.featureItem:hover {
@@ -465,7 +465,7 @@ a:focus {outline:none;}
 /******************************** PROMO BOX ********************************/
 
 #promoBox {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -489,7 +489,7 @@ a:focus {outline:none;}
 #emailInput {
 	width:374px;
 	padding-left:30px;
-	background-image: url('../images/emailInput.png');
+	background-image: image-url('emailInput.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
@@ -500,7 +500,7 @@ a:focus {outline:none;}
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
 	height:55px;
 	width:180px;
-	background-image: url('../images/subscribeButtonGreen.png');
+	background-image: image-url('subscribeButtonGreen.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
@@ -512,7 +512,7 @@ a:focus {outline:none;}
 	text-shadow:0px 0px 3px #525252;
 }
 
-#subscribeButton:hover { background-image: url('../images/subscribeButtonGreenHover.png');  }
+#subscribeButton:hover { background-image: image-url('subscribeButtonGreenHover.png');  }
 
 
 /******************************** HOW IT WORKS ********************************/
@@ -530,7 +530,7 @@ a:focus {outline:none;}
 }
 
 .transition1 {
-	background-image: url('../images/transitionAqua1.png');
+	background-image: image-url('transitionAqua1.png');
 	width:627px;
 	height:137px;
 	margin:0 auto;
@@ -538,7 +538,7 @@ a:focus {outline:none;}
 }
 
 .transition2 {
-	background-image: url('../images/transitionAqua2.png');
+	background-image: image-url('transitionAqua2.png');
 	width:627px;
 	height:140px;
 	margin:0 auto;
@@ -611,7 +611,7 @@ a:focus {outline:none;}
 	margin-top:-19px;
 	background-color:#758ab2;
 	padding:15px 0px 15px 0px;
-	background-image: url('../images/priceAmountBgGreen.png');
+	background-image: image-url('priceAmountBgGreen.png');
 }
 
 .priceAmount h2 span {
@@ -642,7 +642,7 @@ a:focus {outline:none;}
 /******************************** TESTIMONIALS ********************************/
 
 #testimonials {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -743,10 +743,10 @@ a:focus {outline:none;}
 
 .socialIcons li a { display:inline-block; width:25px; height:25px;}
 
-.fbIcon { background-image: url('../images/icons/socialFbAqua.png');}
-.twitterIcon { background-image: url('../images/icons/socialTwitterAqua.png');}
-.googleIcon { background-image: url('../images/icons/socialGoogleAqua.png');}
-.flickrIcon { background-image: url('../images/icons/socialFlickrAqua.png');}
+.fbIcon { background-image: image-url('socialFbAqua.png');}
+.twitterIcon { background-image: image-url('socialTwitterAqua.png');}
+.googleIcon { background-image: image-url('socialGoogleAqua.png');}
+.flickrIcon { background-image: image-url('socialFlickrAqua.png');}
 
 .socialIcons a:hover {
 	opacity:0.7;
@@ -755,7 +755,7 @@ a:focus {outline:none;}
 /******************************** CONTACT ********************************/
 
 #contact {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -770,7 +770,7 @@ a:focus {outline:none;}
 }
 
 .col-lg-8.col-lg-offset-2 {
-	background: url('../images/contactFormBg.png');
+	background: image-url('contactFormBg.png');
 	border-radius:5px;
 	padding:30px;
 	margin-bottom:90px;
@@ -845,7 +845,7 @@ footer {
 }
 
 .logoDark { 
-	background-image: url('../images/logoGreenDark.png'); 
+	background-image: image-url('logoGreenDark.png'); 
 	background-repeat:no-repeat;
 	display:block;
 	width:155px;
