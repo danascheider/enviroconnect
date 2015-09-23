@@ -10,6 +10,7 @@ class NonprofitOrganizationsController < ApplicationController
   # GET /nonprofit_organizations/1
   # GET /nonprofit_organizations/1.json
   def show
+    redirect_to "/organizations/#{@nonprofit_organization.id}"
   end
 
   # GET /nonprofit_organizations/new
@@ -19,6 +20,7 @@ class NonprofitOrganizationsController < ApplicationController
 
   # GET /nonprofit_organizations/1/edit
   def edit
+    redirect_to "/organizations/#{@nonprofit_organization.id}/edit"
   end
 
   # POST /nonprofit_organizations
