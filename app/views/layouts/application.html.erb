@@ -36,7 +36,20 @@
 </head>
 <body data-spy='scroll' data-target='#topnav'>
 
-  <%= yield %>
+  <div id='wrapper'>
+    <header class='navbar navbar-default navbar-fixed-top'>
+      <nav id='top-nav'>
+        <ul>
+          <li>My Profile</li>
+          <li>Connect</li>
+          <li>Recommendations</li>
+        </ul>
+      </nav>
+    </header>
+    <div class='container'>
+      <%= yield %>
+    </div>
+  </div>
 
   <%= javascript_include_tag 'html5shiv', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'jquery.bxslider.min', 'data-turbolinks-track' => true %>
@@ -45,82 +58,5 @@
   <%= javascript_include_tag 'lightbox-2.6', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'respond', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'tabs', 'data-turbolinks-track' => true %>
-
-  <script>
-    "use strict";
-    // ACTIVATE BXSLIDER (for slider section)
-    $(document).ready(function(){
-      $('.slides').fadeIn().bxSlider({
-        auto: true,
-        pager: false,
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '<%= image_tag "nextButton.png", alt: "slider next" %>',
-        prevText: '<%= image_tag "prevButton.png", alt: "slider next" %>',
-        // triggers slider animations on slide change
-        onSlideBefore: function(){
-          $('.jumbotron img').addClass("fadeInReallyFast"); 
-          $('.jumbotron h1').addClass("fadeInFast");  
-          $('.jumbotron p').addClass("fadeInMed"); 
-          $('.jumbotron .button').addClass("fadeInSlow"); 
-          $('.jumbotron .buttonSmall').addClass("fadeInSlow"); 
-          $('#emailInputSlider').addClass("fadeInSlow"); 
-
-          setTimeout (function(){
-          $('.jumbotron img').removeClass("fadeInReallyFast"); 
-          $('.jumbotron h1').removeClass("fadeInFast");  
-          $('.jumbotron p').removeClass("fadeInMed"); 
-          $('.jumbotron .button').removeClass("fadeInSlow"); 
-          $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
-          $('#emailInputSlider').removeClass("fadeInSlow"); 
-          }, 1400);
-        }
-      });
-
-      //Triggers slider animations on page load
-      $(document).ready(function() {
-          $('.jumbotron img').toggleClass("fadeInReallyFast"); 
-          $('.jumbotron h1').toggleClass("fadeInFast"); 
-          $('.jumbotron p').toggleClass("fadeInMed"); 
-          $('.jumbotron .button').toggleClass("fadeInSlow"); 
-          $('.jumbotron .buttonSmall').toggleClass("fadeInSlow"); 
-          $('#emailInputSlider').toggleClass("fadeInSlow"); 
-
-          setTimeout (function(){
-          $('.jumbotron img').removeClass("fadeInReallyFast"); 
-          $('.jumbotron h1').removeClass("fadeInFast");  
-          $('.jumbotron p').removeClass("fadeInMed"); 
-          $('.jumbotron .button').removeClass("fadeInSlow"); 
-          $('.jumbotron .buttonSmall').removeClass("fadeInSlow"); 
-          $('#emailInputSlider').removeClass("fadeInSlow"); 
-          }, 1400);
-      });
-
-      //activate second bxslider (for testimonials section)
-      $('.slides2').bxSlider({
-        auto: true,
-        controls: false
-      });
-      });
-
-    // ACTIVATE ONE PAGE NAV 
-    $(document).ready(function() {
-        $('.nav.navbar-nav.navbar-right').onePageNav();
-    });
-    </script>
-
-    <script>
-    "use strict";
-    // SCREENSHOT IMAGE HOVERS
-    $('.image').mouseover(function()
-    {
-        $(".overlay", this).stop(true, true).fadeIn();
-    }); 
-
-    $('.image').mouseout(function()
-    {
-        $(".overlay", this).stop(true, true).fadeOut();
-    }); 
-  </script>
 </body>
 </html>
