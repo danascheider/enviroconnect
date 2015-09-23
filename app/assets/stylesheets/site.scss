@@ -22,8 +22,15 @@
   display: inline-block;
 }
 
+#wrapper .btn-danger,
+#wrapper .btn-danger:hover,
+#wrapper .btn-danger:focus,
 #wrapper .btn-primary,
 #wrapper .btn-primary:hover,
 #wrapper .btn-primary:focus {
   color: #fff;
+}
+
+#wrapper .page-header {
+  margin-bottom: 0
 }
