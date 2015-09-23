@@ -1,6 +1,14 @@
 <div id='wrapper'>
-  <header class="navbar navbar-default navbar-fixed-top"></header>
-
+  <header class='navbar navbar-default navbar-fixed-top'>
+    <nav id='top-nav'>
+      <ul>
+        <li>My Profile</li>
+        <li>Connect</li>
+        <li>Recommendations</li>
+      </ul>
+    </nav>
+  </header>
+  
   <div class='container'>
   <%- model_class = Organization -%>
     <div class="page-header">
@@ -20,18 +28,10 @@
         <% @organizations.each do |organization| %>
           <tr>
             <td><%= link_to organization.id, organization_path(organization) %></td>
-            <td><%= organization.name %></td>
+            <td><%= link_to organization.name, organization_path(organization) %></td>
             <td><%= organization.mission %></td>
             <td><%= organization.type %></td>
             <td><%= organization.phone %></td>
-            <td><%= organization.address_1 %></td>
-            <td><%= organization.address_2 %></td>
-            <td><%= organization.city %></td>
-            <td><%= organization.state %></td>
-            <td><%= organization.zip %></td>
-            <td><%= organization.email %></td>
-            <td><%= organization.fax %></td>
-            <td><%=l organization.created_at %></td>
             <td>
               <%= link_to t('.edit', :default => t("helpers.links.edit")),
                           edit_organization_path(organization), :class => 'btn btn-default btn-xs' %>
