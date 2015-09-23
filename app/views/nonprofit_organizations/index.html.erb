@@ -20,7 +20,7 @@
         <tr>
           <td><%= link_to organization.name, organization_path(organization) %></td>
           <td><%= organization.mission %></td>
-          <td><%= organization.type %></td>
+          <td><%= organization.type == 'NonprofitOrganization' ? 'Nonprofit Organization' : 'Organization' %></td>
           <td><%= organization.phone %></td>
           <td>
             <%= link_to t('.edit', :default => t("helpers.links.edit")),
