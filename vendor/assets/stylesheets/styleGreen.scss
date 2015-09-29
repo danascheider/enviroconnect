@@ -167,7 +167,8 @@ a:focus {outline:none;}
 .navbar.navbar-default.navbar-fixed-top .navbar-header { margin-left:15px;}
 
 .navbar-brand {
-	background-image: image-url('logoGreen.png');
+	background-image: image-url('logo.png');
+	background-size: 100%;
 	background-repeat:no-repeat;
 	margin-top:13px;
 	display:block;
@@ -845,7 +846,8 @@ footer {
 }
 
 .logoDark { 
-	background-image: image-url('logoGreenDark.png'); 
+	background-image: image-url('logoDark.png'); 
+	background-size: 90%;
 	background-repeat:no-repeat;
 	display:block;
 	width:155px;
