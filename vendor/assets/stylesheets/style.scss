@@ -76,7 +76,7 @@ body {
 .row {
 	margin-top:40px;
 	/* [ignore] image preload for button hover */
-	background: url('../images/buttonRedHover.png') no-repeat -9999px -9999px; 
+	background: image-url('buttonRedHover.png') no-repeat -9999px -9999px; 
 }
 
 h2 {
@@ -108,7 +108,7 @@ a:focus {outline:none;}
 
 .button {
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
-	background-image: url('../images/buttonRed.png');
+	background-image: image-url('buttonRed.png');
 	background-repeat:no-repeat;
 	color:white;
 	font-size:18px;
@@ -121,7 +121,7 @@ a:focus {outline:none;}
 .button:hover {
 	color:white;
 	text-decoration:none;
-	background-image: url('../images/buttonRedHover.png');
+	background-image: image-url('buttonRedHover.png');
 }
 
 .buttonSmall {
@@ -171,7 +171,7 @@ a:focus {outline:none;}
 .navbar.navbar-default.navbar-fixed-top .navbar-header { margin-left:15px;}
 
 .navbar-brand {
-	background-image: url('../images/logo.png');
+	background-image: image-url('logo.png');
 	background-repeat:no-repeat;
 	margin-top:13px;
 	display:block;
@@ -185,7 +185,7 @@ a:focus {outline:none;}
 	font-weight:600;
 	background:none;
 	padding-bottom:35px;
-	background: url('../images/triangleBlue.png');
+	background: image-url('triangleBlue.png');
 	background-repeat:no-repeat;
 	background-position:center bottom;
 }
@@ -198,7 +198,7 @@ a:focus {outline:none;}
 /******************************** SLIDER ********************************/
 
 .jumbotron {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -379,7 +379,7 @@ a:focus {outline:none;}
 #subSliderMessage {
 	text-align:center;
 	padding:10px 0px 70px 0px;
-	background: url('../images/texture.png');
+	background: image-url('texture.png');
 	-webkit-box-shadow: 0px 2px 5px #bababa;
     -moz-box-shadow: 0px 2px 5px #bababa;
     box-shadow: 0px 2px 5px #bababa;
@@ -403,12 +403,12 @@ a:focus {outline:none;}
 	margin:13px 20px 150px 0px;
 }
 
-#addUserIcon { background-image: url('../images/icons/addUserIcon.png'); }
-#cloudIcon { background-image: url('../images/icons/cloudIcon.png'); }
-#gearIcon { background-image: url('../images/icons/gearIcon.png'); }
-#uploadIcon { background-image: url('../images/icons/uploadIcon.png'); }
-#messageIcon { background-image: url('../images/icons/messageIcon.png'); }
-#connectIcon { background-image: url('../images/icons/connectIcon.png'); }
+#addUserIcon { background-image: image-url('addUserIcon.png'); }
+#cloudIcon { background-image: image-url('cloudIcon.png'); }
+#gearIcon { background-image: image-url('gearIcon.png'); }
+#uploadIcon { background-image: image-url('uploadIcon.png'); }
+#messageIcon { background-image: image-url('messageIcon.png'); }
+#connectIcon { background-image: image-url('connectIcon.png'); }
 
 .col-lg-4.featureItem:hover {
 	animation-duration: 0.25s;
@@ -464,7 +464,7 @@ a:focus {outline:none;}
 /******************************** PROMO BOX ********************************/
 
 #promoBox {
-	background: url('../images/sliderBg.jpg');
+	background: image-url('sliderBg.jpg');
 	background-size: cover;
 	background-repeat:no-repeat;
 	color:white;
@@ -488,7 +488,7 @@ a:focus {outline:none;}
 #emailInput {
 	width:374px;
 	padding-left:30px;
-	background-image: url('../images/emailInput.png');
+	background-image: image-url('emailInput.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
@@ -497,9 +497,7 @@ a:focus {outline:none;}
 
 #subscribeButton {
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
-	height:55px;
-	width:180px;
-	background-image: url('../images/subscribeButton.png');
+	background-image: image-url('buttonGreen.png')
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
