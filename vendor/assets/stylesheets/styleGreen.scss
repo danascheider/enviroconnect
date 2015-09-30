@@ -106,6 +106,7 @@ a:focus {outline:none;}
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
 	background-image: image-url('buttonGreen.png');
 	background-repeat:no-repeat;
+	background-size: 100%;
 	color:white;
 	font-size:18px;
 	padding:21px 41px 22px 77px;
@@ -499,9 +500,7 @@ a:focus {outline:none;}
 
 #subscribeButton {
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
-	height:55px;
-	width:180px;
-	background-image: image-url('subscribeButtonGreen.png');
+	background-image: image-url('buttonGreen.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
@@ -513,7 +512,7 @@ a:focus {outline:none;}
 	text-shadow:0px 0px 3px #525252;
 }
 
-#subscribeButton:hover { background-image: image-url('subscribeButtonGreenHover.png');  }
+#subscribeButton:hover { background-image: image-url('buttonGreenHover.png');  }
 
 
 /******************************** HOW IT WORKS ********************************/
