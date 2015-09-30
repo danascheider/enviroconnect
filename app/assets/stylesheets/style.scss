@@ -497,9 +497,7 @@ a:focus {outline:none;}
 
 #subscribeButton {
 	font-family:Proxima Nova Semi-bold, Helvetica, Arial;
-	height:55px;
-	width:180px;
-	background-image: image-url('subscribeButton.png');
+	background-image: image-url('buttonGreen.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	border:none;
@@ -511,7 +509,7 @@ a:focus {outline:none;}
 	text-shadow:0px 0px 3px #525252;
 }
 
-#subscribeButton:hover { background-image: image-url('subscribeButtonHover.png');  }
+#subscribeButton:hover { background-image: image-url('buttonGreen.png');  }
 
 
 /******************************** HOW IT WORKS ********************************/
