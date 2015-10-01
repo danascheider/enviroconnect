@@ -4,16 +4,7 @@ Feature: Organization profile
     Given an organization
     When I visit the organization's profile
     Then I should see its <attribute>
-
+    And I should not see its <undefined_attribute>
       Examples:
-        | attribute |
-        | name      |
-        | mission   |
-        | type      |
-        | phone     |
-        | address_1 | 
-        | address_2 | 
-        | fax       |
-        | city      |
-        | state     |
-        | zip       |
+        | attribute | undefined_attribute |
+        | name      | address_2           |
