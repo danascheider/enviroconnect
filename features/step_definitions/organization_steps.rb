@@ -10,6 +10,10 @@ When(/^I visit the organization's edit page$/) do
   visit "/organizations/#{@organization.id}/edit"
 end
 
+When(/^I submit the edit form for the organization$/) do 
+  click_button 'Update Organization'
+end
+
 Then(/^I should see the organization's edit form$/) do 
   expect(page).to have_css "form#edit_organization_#{@organization.id}"
 end

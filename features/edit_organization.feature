@@ -9,3 +9,4 @@ Feature: Edit organization
 
   Scenario: Valid update
     When I fill in the 'organization[phone]' field with '(503) 555-1212'
+    And I submit the edit form for the organization
