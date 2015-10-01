@@ -6,6 +6,14 @@ When(/^I visit the organization's profile$/) do
   visit "/organizations/#{@organization.id}"
 end
 
+When(/^I visit the organization's edit page$/) do 
+  visit "/organizations/#{@organization.id}/edit"
+end
+
+Then(/^I should see the organization's edit form$/) do 
+  expect(page).to have_css "form#edit_organization_#{@organization.id}"
+end
+
 Given(/^there are (\d+) organizations$/) do |count|
   FactoryGirl.create_list(:organization, count.to_i)
 end
