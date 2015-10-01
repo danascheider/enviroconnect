@@ -14,7 +14,7 @@
     </thead>
     <tbody>
       <% @organizations.each do |organization| %>
-        <tr>
+        <tr class='list-item'>
           <td><%= link_to organization.id, organization_path(organization) %></td>
           <td><%= link_to organization.name, organization_path(organization) %></td>
           <td><%= organization.mission %></td>
