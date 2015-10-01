@@ -1,0 +1,1027 @@
+/* Vertex - A single page app theme   */
+/* Author: Rype Pixel [Chris Gipple]  */
+/* Website: rypepixel.com             */
+/* Email: hello@rypepixel.com         */
+/* Date: 10/9/2013                    */
+/************ TABLE OF CONTENTS ***************
+1. RESET
+2. GLOBAL SETTINGS
+3. HEADER 
+4. SLIDER 
+5. SUB SLIDER MESSAGE
+6. FEATURES 
+7. SCREENSHOTS 
+8. PROMO BOX 
+9. HOW IT WORKS
+10. PRICING
+11. TESTIMONIALS
+12. FAQ
+13. OUR TEAM
+14. CONTACT
+15. FOOTER
+**********************************************/
+/*** RESET ***/
+/* line 29, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*** GLOBAL SETTINGS ***/
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("type/proximanova-light-webfont.eot");
+  src: url("type/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("type/proximanova-light-webfont.woff") format("woff"), url("type/proximanova-light-webfont.ttf") format("truetype"), url("type/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Reg';
+  src: url("type/proximanova-regular-webfont.eot");
+  src: url("type/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("type/proximanova-regular-webfont.woff") format("woff"), url("type/proximanova-regular-webfont.ttf") format("truetype"), url("type/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Semi-bold';
+  src: url("type/proximanova-semibold-webfont.eot");
+  src: url("type/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("type/proximanova-semibold-webfont.woff") format("woff"), url("type/proximanova-semibold-webfont.ttf") format("truetype"), url("type/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 69, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+body {
+  font-family: Proxima Nova Light, Helvetica, Arial;
+  font-size: 16px;
+  color: #737373;
+  padding-top: 90px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 77, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.row {
+  margin-top: 40px;
+  /* [ignore] image preload for button hover */
+  background: url(/assets/buttonRedHover-a7cab77a5353d6e65474386f8b8bbaee3e3ae8cb563a56f012a28c8ffa6df3bc.png) no-repeat -9999px -9999px;
+}
+
+/* line 83, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+h2 {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  font-size: 30px;
+}
+
+/* line 88, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+h3 {
+  font-family: Proxima Nova Light, Helvetica, Arial;
+  font-size: 35px;
+  color: #727272;
+  text-align: center;
+}
+
+/* line 95, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+h4 {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  color: #404040;
+  font-size: 19px;
+}
+
+/* line 101, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 103, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+/* line 110, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.button {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  background-image: url(/assets/buttonRed-24f6eb635313dc36e925934e3d4954246d2fdbbc1eee9e7b86a36a64a6d33070.png);
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 18px;
+  padding: 21px 41px 22px 77px;
+  -webkit-text-shadow: 0px 0px 3px #525252;
+  -moz-text-shadow: 0px 0px 3px #525252;
+  text-shadow: 0px 0px 3px #525252;
+}
+
+/* line 122, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.button:hover {
+  color: white;
+  text-decoration: none;
+  background-image: url(/assets/buttonRedHover-a7cab77a5353d6e65474386f8b8bbaee3e3ae8cb563a56f012a28c8ffa6df3bc.png);
+}
+
+/* line 128, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.buttonSmall {
+  font-family: Proxima Nova Reg, Helvetica, Arial;
+  color: white;
+  border-radius: 30px;
+  background-color: #c76c57;
+  padding: 10px 35px 10px 35px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9b4c2d;
+  -webkit-box-shadow: inset 0px 1px 1px white;
+  -moz-box-shadow: inset 0px 1px 1px white;
+  box-shadow: inset 0px 1px 1px white;
+}
+
+/* line 147, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.buttonSmall:hover {
+  color: white;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0));
+  background-image: linear-gradient(to top, rgba(2, 2, 2, 0), rgba(0, 0, 0, 0.1));
+}
+
+/******************************** HEADER ********************************/
+/* line 161, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.navbar.navbar-default.navbar-fixed-top {
+  font-family: Proxima Nova Reg, Helvetica, Arial;
+  background-color: white;
+  background-image: none;
+  padding: 20px 0px 0px 0px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px #bababa;
+  -moz-box-shadow: 0px 0px 5px #bababa;
+  box-shadow: 0px 0px 3px #747474;
+}
+
+/* line 172, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.navbar.navbar-default.navbar-fixed-top .navbar-header {
+  margin-left: 15px;
+}
+
+/* line 174, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.navbar-brand {
+  background-image: url(/assets/logo-f15f4a8677b38822b276b7b5c83395912f3b0b6987c388f68671a2023aba130e.png);
+  background-repeat: no-repeat;
+  margin-top: 13px;
+  display: block;
+  margin-left: 20px;
+  padding-left: 0px;
+  width: 153px;
+}
+
+/* line 184, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.nav.navbar-nav.navbar-right li.current a {
+  color: #758ab2;
+  font-weight: 600;
+  background: none;
+  padding-bottom: 35px;
+  background: url(/assets/triangleBlue-f6f6c870b31ce7c299abc1e9a805a8fbd677e1c6ede48eec48fbc04180f8727a.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* line 194, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.nav.navbar-nav.navbar-right li a:hover {
+  color: #758ab2;
+}
+
+/******************************** SLIDER ********************************/
+/* line 201, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.jumbotron {
+  background: url(/assets/sliderBg-049a0434c99d61103b16b83a51c2ccc5d77fbcbb25fe20a7a5bc873d4123fded.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  -webkit-text-shadow: 0px 0px 3px #202020;
+  -moz-text-shadow: 0px 0px 3px #202020;
+  text-shadow: 0px 0px 3px #202020;
+  padding: 90px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
+/* line 213, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.sliderControls span {
+  margin-top: -300px;
+  opacity: 0.3;
+}
+
+/* line 218, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.sliderControls #slider-prev {
+  float: left;
+}
+
+/* line 222, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.sliderControls #slider-next {
+  float: right;
+}
+
+/* line 226, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.sliderControls #slider-prev:hover {
+  opacity: 0.7;
+}
+
+/* line 230, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.sliderControls #slider-next:hover {
+  opacity: 0.7;
+}
+
+/* line 234, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-6.slideText {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* line 236, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-5.col-lg-offset-1.slideText {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 30px 40px 30px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+}
+
+/* line 243, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-5.col-lg-offset-1.slideText h1 {
+  font-size: 26px;
+}
+
+/* line 244, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-5.col-lg-offset-1.slideText p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* line 246, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.jumbotron h1 {
+  font-family: Proxima Nova Light, Helvetica, Arial;
+  font-size: 55px;
+}
+
+/* line 252, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.jumbotron h1 span {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+}
+
+/* line 254, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.jumbotron p {
+  font-size: 28px;
+}
+
+/* line 256, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.jumbotron p span {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  color: #e9856e;
+}
+
+/* line 261, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#iphoneBlack {
+  position: relative;
+  z-index: 1000;
+  margin-left: -15px;
+}
+
+/* line 267, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#iphoneWhite {
+  margin-left: 210px;
+  margin-top: -390px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 274, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#ipadWhite {
+  margin-top: 67px;
+  margin-left: 200px;
+}
+
+/* line 279, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#ipadBlack {
+  margin-top: -350px;
+  margin-left: 40px;
+}
+
+/* line 284, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#iphoneBlackSmall {
+  margin-top: -237px;
+  margin-left: -15px;
+}
+
+/* line 289, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#emailInputSlider {
+  font-size: 16px;
+  margin: 0px 0px 20px 0px;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  padding: 0px 15px 0px 15px;
+  height: 47px;
+}
+
+/* line 299, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#emailInputSlider:focus {
+  opacity: 0.7;
+}
+
+/* line 301, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#buttonSmallSlider {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  -webkit-text-shadow: 0px 0px 3px #525252;
+  -moz-text-shadow: 0px 0px 3px #525252;
+  text-shadow: 0px 0px 3px #525252;
+  padding: 0px 35px 0px 35px;
+  height: 50px;
+}
+
+/* line 313, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#bubbleGraphic {
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+/* line 319, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#slideThreeList {
+  margin-left: 13px;
+}
+
+/* line 323, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#slideThreeList li {
+  display: inline;
+  margin-right: 80px;
+}
+
+/* line 328, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#slideThreeList li:nth-child(3) {
+  margin-right: 0px;
+}
+
+/* slider animations */
+/* line 334, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.fadeInReallyFast {
+  animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+/* line 342, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.fadeInFast {
+  animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+/* line 350, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.fadeInMed {
+  animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+/* line 358, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.fadeInSlow {
+  animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation: fadeIn 0.3s linear 0.5s both;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/******************************** SUBSLIDER MESSAGE ********************************/
+/* line 380, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#subSliderMessage {
+  text-align: center;
+  padding: 10px 0px 70px 0px;
+  background: url(/assets/texture-94b338a7125bd1133e26ccf3dd9e5457f67a6ab0cd0e97396cd4edf6ee804c0e.png);
+  -webkit-box-shadow: 0px 2px 5px #bababa;
+  -moz-box-shadow: 0px 2px 5px #bababa;
+  box-shadow: 0px 2px 5px #bababa;
+}
+
+/* line 389, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#subSliderMessage h2 span {
+  color: #c76c57;
+}
+
+/******************************** FEATURES ********************************/
+/* line 396, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#features {
+  padding-bottom: 50px;
+}
+
+/* line 400, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.featureIcon {
+  float: left;
+  width: 61px;
+  height: 61px;
+  margin: 13px 20px 150px 0px;
+}
+
+/* line 407, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#addUserIcon {
+  background-image: url(/assets/addUserIcon-bd59f752df994d3f7101fb83942342c297117e107f053443658f1a51f5aa6f0f.png);
+}
+
+/* line 408, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#cloudIcon {
+  background-image: url(/assets/cloudIcon-8a0546f7b59a61a315b7ab7df3f13ee1d3e46f4c95061fe0dd3d197582e825ee.png);
+}
+
+/* line 409, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#gearIcon {
+  background-image: url(/assets/gearIcon-46ab68ab683a970f27c2c49715292ffd47675c53604d06c76890a8a631691667.png);
+}
+
+/* line 410, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#uploadIcon {
+  background-image: url(/assets/uploadIcon-6684a50e4baed4b02aaeb730f0acad838fe4466134896bfb3b9c460a1c678a30.png);
+}
+
+/* line 411, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#messageIcon {
+  background-image: url(/assets/messageIcon-c7fbaa26a159d103bbed0d598ad4d4b1530c4ff5860ca3aedc78b547c955ef5e.png);
+}
+
+/* line 412, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#connectIcon {
+  background-image: url(/assets/connectIcon-09ed148d5c4333bd044520a43108e4126f1dd1c129fea620c62129bad543c6f7.png);
+}
+
+/* line 414, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.featureItem:hover {
+  animation-duration: 0.25s;
+  animation-name: slideUp;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+/* slideUp animation */
+@keyframes slideUp {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: -10px;
+  }
+}
+/******************************** SCREENSHOTS ********************************/
+/* line 429, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#screenshots {
+  background-color: #f9f9f9;
+  padding-bottom: 70px;
+}
+
+/* line 434, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.screenshotImage {
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  -webkit-box-shadow: 0px 0px 1px #969696;
+  -moz-box-shadow: 0px 0px 1px #969696;
+  box-shadow: 0px 0px 1px #969696;
+  margin-bottom: 30px;
+}
+
+/* line 444, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.overlay {
+  margin-top: -193px;
+  margin-left: 5px;
+  float: left;
+  background-color: #c46d58;
+  width: 260px;
+  height: 158px;
+  position: relative;
+  display: none;
+  opacity: 0.9;
+}
+
+/* line 456, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.linkIcon {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  pointer-events: none;
+}
+
+/******************************** PROMO BOX ********************************/
+/* line 467, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#promoBox {
+  background: url(/assets/sliderBg-049a0434c99d61103b16b83a51c2ccc5d77fbcbb25fe20a7a5bc873d4123fded.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  -webkit-text-shadow: 0px 0px 4px #202020;
+  -moz-text-shadow: 0px 0px 4px #202020;
+  text-shadow: 0px 0px 4px #202020;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+}
+
+/* line 479, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#promoBox h4 {
+  color: white;
+}
+
+/* line 480, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#promoBox h4 span {
+  color: #c76c57;
+}
+
+/*** SUBSCRIBE FORM ***/
+/* line 485, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#subscribeForm {
+  margin-top: 5px;
+}
+
+/* line 489, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#emailInput {
+  width: 374px;
+  padding-left: 30px;
+  background-image: url(/assets/emailInput-f73ad37f06c5edb238607ecc53e4770c9e9324500478dfdc6b441c8be0f5be10.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  height: 55px;
+}
+
+/* line 499, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#subscribeButton {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  background-image: url(/assets/buttonGreen-3040ad66d2e0a8b5880fd6b1c6ac5f441044095015716319b04b5e303734c032.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: -4px;
+  padding-right: 13px;
+  -webkit-text-shadow: 0px 0px 3px #525252;
+  -moz-text-shadow: 0px 0px 3px #525252;
+  text-shadow: 0px 0px 3px #525252;
+}
+
+/* line 513, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#subscribeButton:hover {
+  background-image: url(/assets/buttonGreen-3040ad66d2e0a8b5880fd6b1c6ac5f441044095015716319b04b5e303734c032.png);
+}
+
+/******************************** HOW IT WORKS ********************************/
+/* line 518, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#howItWorks h4 span {
+  color: #758ab2;
+}
+
+/* line 522, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.iphoneSmall {
+  margin-left: 120px;
+}
+
+/* line 526, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.transition1 {
+  background-image: url(/assets/transition1-6948b82fbb3c67e1743b2ddfc6a07cf1981a428d3dd7d73afbcb575f14f87685.png);
+  background-repeat: no-repeat;
+  width: 627px;
+  height: 137px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 535, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.transition2 {
+  background-image: url(/assets/transition2-5a2807e69678fc451e1cdebeeb01d8d50f7c25eaaafb6449a505c450d850afd7.png);
+  background-repeat: no-repeat;
+  width: 627px;
+  height: 140px;
+  margin: 0 auto;
+  display: block;
+}
+
+/******************************** PRICING ********************************/
+/* line 546, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#pricing {
+  margin-bottom: 50px;
+}
+
+/* line 550, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingTable {
+  margin-top: -15px;
+  padding: 0px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c9c9c9;
+  -webkit-box-shadow: 0px 0px 4px #d6d6d6;
+  -moz-box-shadow: 0px 0px 4px #d6d6d6;
+  box-shadow: 0px 0px 4px #d6d6d6;
+  margin-bottom: 30px;
+}
+
+/* line 564, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingTable:hover {
+  margin-top: -25px;
+  animation-duration: 0.55s;
+  animation-name: slideUpPrice;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+/* animation */
+@keyframes slideUpPrice {
+  from {
+    margin-top: -20px;
+  }
+  to {
+    margin-top: -25px;
+  }
+}
+/* line 583, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingHeader {
+  padding: 5px 0px 10px 0px;
+}
+
+/* line 588, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingTable h1 {
+  color: #5b6a84;
+  font-size: 25px;
+}
+
+/* line 593, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingTable h2 {
+  color: white;
+  font-size: 50px;
+  line-height: 25px;
+  -webkit-text-shadow: 0px 0px 3px #202020;
+  -moz-text-shadow: 0px 0px 3px #202020;
+  text-shadow: 0px 0px 3px #202020;
+}
+
+/* line 602, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.triangleWhite {
+  margin: 0 auto;
+}
+
+/* line 606, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.priceAmount {
+  margin-top: -19px;
+  background-color: #758ab2;
+  padding: 15px 0px 15px 0px;
+  background-image: url(/assets/priceAmountBg-61ef2bd71c9ad7cb30e891358cceec68e5e43a53fd945cbb80b3532ced38650a.png);
+}
+
+/* line 613, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.priceAmount h2 span {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 618, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.pricingTable ul li {
+  list-style: none;
+  line-height: 50px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.05), rgba(2, 2, 2, 0));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.05), rgba(2, 2, 2, 0));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.05), rgba(2, 2, 2, 0));
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.05), rgba(2, 2, 2, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.04), rgba(2, 2, 2, 0));
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #d3d3d3;
+}
+
+/* line 631, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.buttonContainer {
+  margin-top: -10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/******************************** TESTIMONIALS ********************************/
+/* line 640, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#testimonials {
+  background: url(/assets/sliderBg-049a0434c99d61103b16b83a51c2ccc5d77fbcbb25fe20a7a5bc873d4123fded.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  -webkit-text-shadow: 0px 0px 4px #202020;
+  -moz-text-shadow: 0px 0px 4px #202020;
+  text-shadow: 0px 0px 4px #202020;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 652, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#testimonials h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* line 657, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#testimonials p span a {
+  color: #c76c57;
+  font-weight: bold;
+}
+
+/* line 662, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#testimonials p span a:hover {
+  color: #758ab2;
+  text-decoration: none;
+}
+
+/******************************** FAQ ********************************/
+/* line 670, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#faq {
+  margin-bottom: 70px;
+}
+
+/* line 674, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.tabs li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+/* line 679, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.tabs a {
+  color: #8b8989;
+  padding: 13px;
+  border-style: solid;
+  border-color: #d2d2d2;
+  border-width: 2px;
+  border-radius: 5px;
+  display: block;
+}
+
+/* line 690, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.tabs a:hover {
+  color: #758ab2;
+  border-color: #758ab2;
+  text-decoration: none;
+}
+
+/* line 696, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.tabs a.active {
+  background: #758ab2;
+  border-color: #758ab2;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 703, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-8.tabContent {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+/* line 709, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-8.tabContent span {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+}
+
+/******************************** OUR TEAM ********************************/
+/* line 716, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#ourTeam {
+  background-color: #f9f9f9;
+  padding-bottom: 70px;
+}
+
+/* line 721, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-6.teamMemberInfo h4 span {
+  color: #db7b65;
+}
+
+/* line 723, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.teamImage {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 728, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.teamText {
+  float: left;
+}
+
+/* line 730, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.socialIcons li {
+  list-style: none;
+  display: inline;
+  margin-right: 6px;
+}
+
+/* line 736, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.socialIcons li a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 738, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.fbIcon {
+  background-image: url(/assets/socialFb-f7c44028a66395b5f14e693998af5f03583da884130497c0b4cbf6e3d6db34f4.png);
+}
+
+/* line 739, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.twitterIcon {
+  background-image: url(/assets/socialTwitter-50d7492938d18f1988c1b95406e6a3668e7e8c5dff4f821b4b8a2b3b0e7a79a8.png);
+}
+
+/* line 740, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.googleIcon {
+  background-image: url(/assets/socialGoogle-ea82b84cd053400519b32f838e49adbc8057177742caae73f5b841bb841525c0.png);
+}
+
+/* line 741, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.flickrIcon {
+  background-image: url(/assets/socialFlickr-8b693896e71789477ce7011f96aee34e67936e72ef47cd5dc67907d95779ffb5.png);
+}
+
+/* line 743, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.socialIcons a:hover {
+  opacity: 0.7;
+}
+
+/******************************** CONTACT ********************************/
+/* line 750, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#contact {
+  background: url(/assets/sliderBg-049a0434c99d61103b16b83a51c2ccc5d77fbcbb25fe20a7a5bc873d4123fded.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+/* line 758, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+#contact h3 {
+  color: white;
+  -webkit-text-shadow: 0px 0px 3px #202020;
+  -moz-text-shadow: 0px 0px 3px #202020;
+  text-shadow: 0px 0px 3px #202020;
+}
+
+/* line 765, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-8.col-lg-offset-2 {
+  background: url(/assets/contactFormBg-6849f17dd56e0180f4ab42b5b240d7a6101fc770e015da93503b0ed419db4c34.png);
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 90px;
+}
+
+/* line 772, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.contactInput {
+  width: 330px;
+  padding-left: 13px;
+  background-color: white;
+  opacity: 0.6;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* line 785, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.contactMessage {
+  width: 687px;
+  height: 200px;
+  border-radius: 5px;
+  border: none;
+  padding: 13px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+/* line 795, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.contactInput:hover, .contactMessage:hover {
+  opacity: 0.7;
+  animation-duration: 0.4s;
+  animation-name: inputHover;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+/* line 803, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.contactInput:focus, .contactMessage:hover {
+  opacity: 0.7;
+}
+
+/* animation */
+@keyframes inputHover {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+/* line 816, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.error {
+  font-family: Proxima Nova Semi-bold;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #e4b4b4;
+  background: #bb4141;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/******************************** FOOTER ********************************/
+/* line 830, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+footer {
+  background-color: #242424;
+  color: #8e8e8e;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+/* line 837, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.logoDark {
+  background-image: url(/assets/logoDark-55a6d45e424534ef1160f276b146a0a96ed5049079ac7c72510b757d7fe23c91.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 155px;
+  height: 29px;
+  margin-bottom: -25px;
+}
+
+/* line 846, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.about, .col-lg-4.twitter, .col-lg-4.contact {
+  margin-bottom: 40px;
+}
+
+/* line 850, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+footer a {
+  color: #c76c57;
+}
+
+/* line 854, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+footer a:hover {
+  color: #758ab2;
+  text-decoration: none;
+}
+
+/* line 859, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+footer h4 {
+  color: #d6d6d6;
+}
+
+/* line 863, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+footer ul li {
+  list-style: none;
+}
+
+/* line 867, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.twitter ul li {
+  margin-bottom: 15px;
+}
+
+/* line 871, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.twitter span {
+  font-style: italic;
+  font-size: 13px;
+  color: #777777;
+}
+
+/* line 877, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.contact ul li {
+  font-family: Proxima Nova Semi-bold, Helvetica, Arial;
+  margin-bottom: 10px;
+}
+
+/* line 882, /Users/dana/Development/enviroconnect/app/assets/stylesheets/style.scss */
+.col-lg-4.contact img {
+  margin-right: 15px;
+}
