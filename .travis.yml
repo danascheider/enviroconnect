@@ -7,7 +7,7 @@ before_script:
   - mysql -e 'create database enviroconnect_test'
 script:
   - mv config/travis-db.yml config/database.yml
-  - bundle exec rake --trace db:schema:load test
+  - bundle exec rake --trace db:schema:load
 sudo: false
 notifications:
   email: false
