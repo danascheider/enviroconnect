@@ -1,7 +1,8 @@
 Feature: Organization profile
 
   Scenario Outline:
-    When I visit an organization's profile
+    Given an organization
+    When I visit the organization's profile
     Then I should see its <attribute>
 
       Examples:

@@ -1,5 +1,8 @@
-When(/^I visit an organization's profile$/) do 
+Given(/^an organization$/) do 
   @organization = FactoryGirl.create(:organization)
+end
+
+When(/^I visit the organization's profile$/) do 
   visit "/organizations/#{@organization.id}"
 end
 
