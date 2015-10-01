@@ -10,3 +10,7 @@ end
 Then(/^I should see (\d+) organizations listed$/) do |count|
   expect(page).to have_css '.list-item', count: count.to_i
 end
+
+Then(/^I should see its (.*)$/) do |attribute|
+  expect(page).to have_text(@organization.send(attribute.to_sym))
+end
