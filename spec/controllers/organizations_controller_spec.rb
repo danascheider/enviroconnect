@@ -6,7 +6,7 @@ RSpec.describe OrganizationsController, type: :controller do
   }
 
   let(:invalid_attributes) {
-    { zip: 27712 }
+    { zip: 'foobar' }
   }
 
   # This should return the minimal set of values that should be in the session
