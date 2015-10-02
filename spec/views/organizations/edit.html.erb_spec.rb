@@ -11,7 +11,6 @@ RSpec.describe "organizations/edit", type: :view do
       :address_2 => "MyString",
       :city => "MyString",
       :state => "MyString",
-      :zip => 1
     ))
   end
 
