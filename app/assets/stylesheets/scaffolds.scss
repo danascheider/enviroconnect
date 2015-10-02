@@ -71,3 +71,7 @@ div {
     list-style: square;
   }
 }
+
+.panel-danger > .panel-body > ul {
+  margin-left: 2em
+}
