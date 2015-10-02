@@ -17,4 +17,9 @@ RSpec.describe Organization, type: :model do
     organization = Organization.new
     expect(organization).not_to be_valid
   end
+
+  it 'is invalid with the wrong kind of zip code' do 
+    organization = Organization.new(name: 'Organization', zip: 9129999)
+    expect(organization).not_to be_valid
+  end
 end
