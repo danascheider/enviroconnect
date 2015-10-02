@@ -41,6 +41,8 @@ group :development, :test do
   gem 'database_cleaner', '~>1.4'
   gem 'capybara', '~>2.4', '>= 2.4.4'
   gem 'factory_girl_rails', '~>4.5'
+  gem 'simplecov', '~> 0.10'
+  gem 'coveralls', '~> 0.8'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
