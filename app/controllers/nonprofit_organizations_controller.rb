@@ -18,9 +18,8 @@ class NonprofitOrganizationsController < ApplicationController
     @nonprofit_organization = NonprofitOrganization.new
   end
 
-  # GET /nonprofit_organizations/1/edit
+  # GET /nonprofit_organizations/edit
   def edit
-    redirect_to "/organizations/#{@nonprofit_organization.id}/edit"
   end
 
   # POST /nonprofit_organizations
@@ -71,6 +70,6 @@ class NonprofitOrganizationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def nonprofit_organization_params
-      params[:nonprofit_organization]
+      params.require(:nonprofit_organization).permit(:name, :mission, :type, :phone, :address_1, :address_2, :city, :state, :zip)
     end
 end
