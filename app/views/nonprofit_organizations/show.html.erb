@@ -1,0 +1,53 @@
+<%- model_class = NonprofitOrganization -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => @nonprofit_organization.name %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <% if @nonprofit_organization.mission && !@nonprofit_organization.mission.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:mission) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.mission %></dd>
+  <% end %>
+  <% if !@nonprofit_organization.phone.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.phone %></dd>
+  <% end %>
+  <% if @nonprofit_organization.fax && !@nonprofit_organization.fax.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:fax) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.fax %></dd>
+  <% end %>
+  <% if @nonprofit_organization.email && !@nonprofit_organization.email.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.email %></dd>
+  <% end %>
+  <% if @nonprofit_organization.address_1 && !@nonprofit_organization.address_1.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:address_1) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.address_1 %></dd>
+  <% end %>
+  <% if @nonprofit_organization.address_2 && !@nonprofit_organization.address_2.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:address_2) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.address_2 %></dd>
+  <% end %>
+  <% if @nonprofit_organization.city && !@nonprofit_organization.city.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.city %></dd>
+  <% end %>
+  <% if @nonprofit_organization.state && !@nonprofit_organization.state.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:state) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.state %></dd>
+  <% end %>
+  <% if @nonprofit_organization.zip && !@nonprofit_organization.zip.try(:empty?) %>
+    <dt><strong><%= model_class.human_attribute_name(:zip) %>:</strong></dt>
+    <dd><%= @nonprofit_organization.zip %></dd>
+  <% end %>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              organizations_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_organization_path(@nonprofit_organization), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              organization_path(@nonprofit_organization),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
