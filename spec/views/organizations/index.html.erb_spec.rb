@@ -6,7 +6,7 @@ RSpec.describe "organizations/index", type: :view do
   end
 
   it "renders a list of organizations" do
-    render
+    render :template => "/organizations/index.html.erb"
     expect(rendered).to include(Organization.first.name)
     expect(rendered).to include(Organization.last.name)
   end
