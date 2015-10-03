@@ -24,7 +24,13 @@ RSpec.describe NonprofitOrganizationsController, type: :controller do
   # NonprofitOrganization. As you add validations to NonprofitOrganization, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      name: 'My Organization',
+      type: 'NonprofitOrganization',
+      mission: 'Make the world a better place',
+      city: 'Portland',
+      state: 'OR'
+    }
   }
 
   let(:invalid_attributes) {
