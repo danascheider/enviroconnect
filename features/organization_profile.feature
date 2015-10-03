@@ -1,10 +1,7 @@
 Feature: Organization profile
 
-  Scenario Outline:
+  Scenario: Organization with incomplete profile
     Given an organization
     When I visit the organization's profile
-    Then I should see its <attribute>
-    And I should not see its <undefined_attribute>
-      Examples:
-        | attribute | undefined_attribute |
-        | name      | address_2           |
+    Then I should see its name
+    And I should not see its address_2
