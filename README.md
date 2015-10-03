@@ -1,3 +1,2 @@
-# EnviroConnect
-
+## EnviroConnect [![Build Status](https://travis-ci.org/danascheider/enviroconnect.svg)](https://travis-ci.org/danascheider/enviroconnect)  [![Coverage Status](https://coveralls.io/repos/danascheider/enviroconnect/badge.svg?branch=master&service=github)](https://coveralls.io/github/danascheider/enviroconnect?branch=master)  [![Code Climate](https://codeclimate.com/github/danascheider/enviroconnect/badges/gpa.svg)](https://codeclimate.com/github/danascheider/enviroconnect)
 Web app for connecting students, nonprofits, governments, and businesses to come together in support of sustainability and environmental initiatives.
