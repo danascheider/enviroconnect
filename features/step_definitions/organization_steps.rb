@@ -57,3 +57,7 @@ Then(/^the organization's '(.*)' attribute should (not )?be '(.*)'$/) do |attrib
     expect(@organization.send(attribute.to_sym)).to eql value
   end
 end
+
+Then(/^there should be a new organization called '(.*)'$/) do |name|
+  expect(Organization.find_by(name: name)).to be_truthy
+end
