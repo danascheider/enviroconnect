@@ -30,8 +30,7 @@ class OrganizationsController < ApplicationController
       if @organization.save
         success format, 'Organization was successfully created.'
       else
-        format.html { render :new }
-        format.json { render json: @organization.errors, status: :unprocessable_entity }
+        failure format, :new
       end
     end
   end
@@ -43,8 +42,7 @@ class OrganizationsController < ApplicationController
       if @organization.update(organization_params)
         success format, 'Organization was successfully udpated.'
       else
-        format.html { render :edit }
-        format.json { render json: @organization.errors, status: :unprocessable_entity }
+        failure format, :edit
       end
     end
   end
@@ -65,10 +63,16 @@ class OrganizationsController < ApplicationController
       @organization = Organization.find(params[:id])
     end
 
-    #
+    # Handle successful creation or update of organization
     def success(format, notice='Organization was successfully saved.')
       format.html { redirect_to @organization, notice: notice }
       format.json { render :show, status: :ok, location: @organization }
+    end
+
+    # Handle invalid creation or update of organization
+    def failure(format, nexxt)
+      format.html { render nexxt }
+      format.json { render json: @organization.errors, status: :unprocessable_entity }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
