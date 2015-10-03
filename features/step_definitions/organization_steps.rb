@@ -19,6 +19,8 @@ When(/^I submit the edit form for the organization$/) do
 end
 
 When(/^I submit the organization creation form with:$/) do |table|
+  @count = Organization.count
+
   table.hashes.each do |hash|
     hash.each do |key, val|
       fill_in "organization[#{key}]", with: val
@@ -60,6 +62,10 @@ end
 
 Then(/^there should be a new organization called '(.*)'$/) do |name|
   expect(Organization.find_by(name: name)).to be_truthy
+end
+
+Then(/^there should not be a new organization$/) do 
+  expect(Organization.count).to eql @count
 end
 
 Then(/^I should see the new organization's profile$/) do 
