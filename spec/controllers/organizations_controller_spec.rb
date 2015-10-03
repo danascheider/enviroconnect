@@ -81,14 +81,14 @@ RSpec.describe OrganizationsController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {zip: '94122'}
       }
 
       it "updates the requested organization" do
         organization = Organization.create! valid_attributes
         put :update, {:id => organization.to_param, :organization => new_attributes}, valid_session
         organization.reload
-        skip("Add assertions for updated state")
+        expect(organization.zip).to eql '94122'
       end
 
       it "assigns the requested organization as @organization" do
