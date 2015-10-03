@@ -18,6 +18,16 @@ When(/^I submit the edit form for the organization$/) do
   click_button 'Update Organization'
 end
 
+When(/^I submit the organization creation form with:$/) do |table|
+  table.hashes.each do |hash|
+    hash.each do |key, val|
+      fill_in "organization[#{key}]", with: val
+    end
+  end
+
+  click_button 'Create Organization'
+end
+
 Then(/^I should see the organization's edit form$/) do 
   expect(page).to have_css "form#edit_organization_#{@organization.id}"
 end
