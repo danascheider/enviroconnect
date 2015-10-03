@@ -1,3 +1,4 @@
+@organizations
 Feature: Organization profile
 
   Scenario: Organization with incomplete profile

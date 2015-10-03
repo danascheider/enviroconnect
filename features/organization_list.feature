@@ -1,3 +1,4 @@
+@organizations
 Feature: Organization list
   Background:
     Given there are 3 organizations

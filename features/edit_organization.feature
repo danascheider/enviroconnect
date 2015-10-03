@@ -1,3 +1,4 @@
+@organizations
 Feature: Edit organization
   
   Background:
