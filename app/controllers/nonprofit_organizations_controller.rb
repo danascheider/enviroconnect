@@ -28,8 +28,7 @@ class NonprofitOrganizationsController < ApplicationController
 
     respond_to do |format|
       if @nonprofit_organization.save
-        format.html { redirect_to @nonprofit_organization, notice: 'Nonprofit organization was successfully created.' }
-        format.json { render :show, status: :created, location: @nonprofit_organization }
+        success format, 'Nonprofit organization was successfully created.'
       else
         format.html { render :new }
         format.json { render json: @nonprofit_organization.errors, status: :unprocessable_entity }
@@ -42,8 +41,7 @@ class NonprofitOrganizationsController < ApplicationController
   def update
     respond_to do |format|
       if @nonprofit_organization.update(nonprofit_organization_params)
-        format.html { redirect_to @nonprofit_organization, notice: 'Nonprofit organization was successfully updated.' }
-        format.json { render :show, status: :ok, location: @nonprofit_organization }
+        success format, 'Nonprofit organization was successfully updated.'
       else
         format.html { render :edit }
         format.json { render json: @nonprofit_organization.errors, status: :unprocessable_entity }
@@ -65,6 +63,11 @@ class NonprofitOrganizationsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_nonprofit_organization
       @nonprofit_organization = NonprofitOrganization.find(params[:id])
+    end
+
+    def success(format, message='Nonprofit organization was successfully saved.')
+      format.html { redirect_to @nonprofit_organization, notice: message }
+      format.json { render :show, status: :ok, location: @nonprofit_organization }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
