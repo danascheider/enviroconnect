@@ -1,0 +1,6 @@
+# Save as .codeclimate.yml (note leading .) in project root directory
+languages:
+  Ruby: true
+exclude_paths:
+  - "startbootstrap-business-casual-1.0.3/**/*"
+  - "business_event_theme/**/*"
