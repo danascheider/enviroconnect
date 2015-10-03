@@ -61,3 +61,7 @@ end
 Then(/^there should be a new organization called '(.*)'$/) do |name|
   expect(Organization.find_by(name: name)).to be_truthy
 end
+
+Then(/^I should see the new organization's profile$/) do 
+  expect(current_path).to eql "/organizations/#{Organization.last.id}"
+end
