@@ -30,8 +30,7 @@ class NonprofitOrganizationsController < ApplicationController
       if @nonprofit_organization.save
         success format, 'Nonprofit organization was successfully created.'
       else
-        format.html { render :new }
-        format.json { render json: @nonprofit_organization.errors, status: :unprocessable_entity }
+        failure format, :new
       end
     end
   end
@@ -43,8 +42,7 @@ class NonprofitOrganizationsController < ApplicationController
       if @nonprofit_organization.update(nonprofit_organization_params)
         success format, 'Nonprofit organization was successfully updated.'
       else
-        format.html { render :edit }
-        format.json { render json: @nonprofit_organization.errors, status: :unprocessable_entity }
+        failure format, :edit
       end
     end
   end
@@ -68,6 +66,11 @@ class NonprofitOrganizationsController < ApplicationController
     def success(format, message='Nonprofit organization was successfully saved.')
       format.html { redirect_to @nonprofit_organization, notice: message }
       format.json { render :show, status: :ok, location: @nonprofit_organization }
+    end
+
+    def failure(format, nexxt)
+      format.html { render nexxt }
+      format.json { render json: @nonprofit_organization.errors, status: :unprocessable_entity }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
