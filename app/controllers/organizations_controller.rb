@@ -28,8 +28,7 @@ class OrganizationsController < ApplicationController
 
     respond_to do |format|
       if @organization.save
-        format.html { redirect_to @organization, notice: 'Organization was successfully created.' }
-        format.json { render :show, status: :created, location: @organization }
+        success format, 'Organization was successfully created.'
       else
         format.html { render :new }
         format.json { render json: @organization.errors, status: :unprocessable_entity }
@@ -42,8 +41,7 @@ class OrganizationsController < ApplicationController
   def update
     respond_to do |format|
       if @organization.update(organization_params)
-        format.html { redirect_to @organization, notice: 'Organization was successfully updated.' }
-        format.json { render :show, status: :ok, location: @organization }
+        success format, 'Organization was successfully udpated.'
       else
         format.html { render :edit }
         format.json { render json: @organization.errors, status: :unprocessable_entity }
@@ -65,6 +63,12 @@ class OrganizationsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_organization
       @organization = Organization.find(params[:id])
+    end
+
+    #
+    def success(format, notice='Organization was successfully saved.')
+      format.html { redirect_to @organization, notice: notice }
+      format.json { render :show, status: :ok, location: @organization }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
