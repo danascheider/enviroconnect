@@ -4,3 +4,7 @@ languages:
 exclude_paths:
   - "startbootstrap-business-casual-1.0.3/**/*"
   - "business_event_theme/**/*"
+  - "site_theme/**/*"
+  - "app/assets/javascripts/bootstrap*"
+  - "app/assets/javascripts/jquery*"
+  - "public/assets/**/*"
