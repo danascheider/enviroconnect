@@ -34,7 +34,9 @@ RSpec.describe NonprofitOrganizationsController, type: :controller do
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      name: nil
+    }
   }
 
   # This should return the minimal set of values that should be in the session
