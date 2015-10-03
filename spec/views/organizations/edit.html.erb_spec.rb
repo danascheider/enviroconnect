@@ -23,7 +23,7 @@ RSpec.describe "organizations/edit", type: :view do
 
       assert_select "input#organization_mission[name=?]", "organization[mission]"
 
-      assert_select "input#organization_type[name=?]", "organization[type]"
+      assert_select "select#organization_type[name=?]", "organization[type]"
 
       assert_select "input#organization_phone[name=?]", "organization[phone]"
 
