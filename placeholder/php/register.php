@@ -4,7 +4,7 @@
     $profile = $_POST['profile'];
     $notes = $_POST['notes'];
 
-    $to = 'gelevanog@gmail.com';
+    $to = 'danascheider@inviroconnect.com';
     $subject = 'Requesting information about InviroConnect';
     $body = "Detail:<br><br>			
             Name: <strong>$name</strong><br>   
