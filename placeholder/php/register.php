@@ -1,16 +1,16 @@
 <?php 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $plan = $_POST['plan'];
+    $profile = $_POST['profile'];
+    $notes = $_POST['notes'];
 
-    $to = 'gelevanog@gmail.com';    
-    $subject = 'Person registered for the meeting';
+    $to = 'gelevanog@gmail.com';
+    $subject = 'Requesting information about InviroConnect';
     $body = "Detail:<br><br>			
             Name: <strong>$name</strong><br>   
             Email: <strong>$email</strong><br>          
-            Phone: <strong>$phone</strong><br>
-            Plan: <strong>$plan</strong><br>           
+            Profile: <strong>$profile</strong><br>
+            Comments: <strong>$notes</strong><br>           
             ";
 
     $headers = array(); 
