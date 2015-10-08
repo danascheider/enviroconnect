@@ -30,6 +30,7 @@
 
   .navbar-custom {
     width: 100%;
+    background-color: #ffffff;
     border-color: #eeeeee;
   }
 
@@ -1191,4 +1192,8 @@ fieldset[disabled] .btn-link:focus {
 /***** remove scroll *****/
 .remove-scroll {
   overflow: hidden;
+}
+
+.main-header > nav > container {
+  background-color: white!important;
 }
