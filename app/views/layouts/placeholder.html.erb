@@ -9,36 +9,39 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- /// font icons  /// -->
-      <link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="assets/fonts/linecons/css/linecons.css">
+      <%= stylesheet_link_tag 'font-awesome/font-awesome.min', 'data-turbolinks-track' => true %>
+      <%= stylesheet_link_tag 'linecons', 'data-turbolinks-track' => true %>
       <!-- ///  google fonts  /// -->
       <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
       <!-- ///  animate.css  /// -->
-      <link rel="stylesheet" type="text/css" href="assets/css/plugins/animate/animate.css">
+      <%= stylesheet_link_tag 'animate.min', 'data-turbolinks-track' => true %>
       <!-- ///  bootstrap-select.css /// -->
-      <link rel="stylesheet" type="text/css" href="assets/css/plugins/select/bootstrap-select.css">
+      <%= stylesheet_link_tag 'bootstrap-select', 'data-turbolinks-track' => true %>
       <!-- ///  bootstrap.css  /// -->
-      <link rel="stylesheet" type="text/css" href="bootstrap-3.1.1/css/bootstrap.css">      
+      <%= stylesheet_link_tag 'bootstrap.min', 'data-turbolinks-track' => true %>
       <!-- ///  main CSS file  /// -->        
-      <link rel="stylesheet" type="text/css" href="assets/css/main.css">        
+      <%= stylesheet_link_tag 'placeholder', 'data-turbolinks-track' => true %>
   </head>
   <body class="remove-scroll">
     <%= yield %>
-    
+
     <!-- ///  start script  /// -->
     <!-- ///  libs  /// -->
-    <script src="assets/js/libs/modernizr-latest.js"></script>        
-    <script src="assets/js/libs/jquery-1.11.0.min.js"></script>     
-    <script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>   
+    <!-- ///  start script  /// -->
+    <!-- ///  libs  /// -->
+    <%= javascript_include_tag 'modernizr-latest', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'bootstrap.min', 'data-turbolinks-track' => true %>
+
     <!-- ///  plugins  /// -->
-    <script src="assets/js/plugins/fitvids/jquery.fitvids.js"></script>
-    <script src="assets/js/plugins/select/bootstrap-select.min.js"></script>
-    <script src="assets/js/plugins/gmap3/gmap3.min.js"></script>
-    <script src="assets/js/plugins/scrollTo/jquery.scrollTo.js"></script>
-    <script src="assets/js/plugins/nav/jquery.nav.js"></script>
-    <script src="assets/js/plugins/countdown/countdown.js"></script>
-    <script src="assets/js/plugins/placeholder/jquery.placeholder.js"></script>
-    <script src="assets/js/plugins/validator/jquery.form-validator.min.js"></script>
-    <script src="assets/js/plugins/wow/wow.min.js"></script>        
-    <script src="assets/js/main.js"></script>
+    <%= javascript_include_tag 'jquery.fitvids', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'bootstrap-select.min', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'gmap3.min', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.scrollTo', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.nav', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'countdown', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.placeholder', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.form-validator.min', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'wow.min', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'placeholder', 'data-turbolinks-track' => true %>
   </body>
